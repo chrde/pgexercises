@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Run sql",
+    "command": "execute \"normal! vip\\<esc>\" | execute \"TREPLSendSelection\"",
+    "type": "vim",
+    "keep_scroll": true
+  },
+  {
+    "name": "Start REPL",
+    "command": "docker exec -it -u postgres pgexercise_db_1 psql -d exercises",
+    "default": true
+  },
+  {
+    "name": "Start DB",
+    "command": "docker-compose up -d"
+  }
+]
